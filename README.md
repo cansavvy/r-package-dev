@@ -9,13 +9,15 @@ This is Candace's guide to making R packages that hopefully won't break easily.
 4. Create a pkgdown set up for docs `usethis::use_pkgdown()`
 4. Create a README that will act as your vignette.
 5. Write out in the README what this should look like from the user perspective.
-   a. what does this R package do?how to install
+   a. what does this R package do? how to install
    b. how to install it
    c. How to run the most basic workflow with it. 
 7. Break up the most basic workflow described in the README into discrete units. 
 8. Create a file in `R` folder for each unit and include a "utils.R" that holds things that might be used by multiple files. Develop these in the order that they will be used in the vignette
 9. Create a test file for each of these respective units with the same file name for each using `usethis::use_test("discrete_unit_name")`
 10. File a PR with all this
+
+- Edit and reedit the DESCRIPTION file as needed
 
 ## Develop a unit 
 11. In each R file create documentation first. What is the main goal of the function -- aka if this doesn't work the whole thing is trash. What arguments are absolutely necessary (ignore fringe features right now)? What are the goals of the functions? Write all this down before even creating code that does it. 
