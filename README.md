@@ -1,5 +1,7 @@
 # r-package-dev
 
+This is Candace's guide to making R packages that hopefully won't break easily. 
+
 1. Create an R package `devtools::create("myfirstpackage")`
 2. Push this to a new github repo. 
 3. Copy over GHA tests, PR template, issues templates. Can legit copy this whole folder to your repo: https://github.com/fhdsl/metricminer/tree/main/.github and make a PR for that. 
